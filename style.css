@@ -1,0 +1,270 @@
+/* Estilos básicos */
+
+*{
+    
+    /* Remove as margens padrão */
+    margin: 0;
+    /* Remove o padding padrão */
+    padding: 0;
+    /* Define o modelo de caixa para incluir padding e borda no tamanho total */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #4b4b4b;
+    line-height: 1.6;
+}
+
+header {
+    /* ... seus estilos existentes ... */
+    text-align: center; 
+  }
+  
+  header h1 {
+    font-size: 3em; 
+    margin-top: 10px; 
+  }
+  
+header h1 .lg1 { /* Estilos para a parte "Gest" do nome */
+  font-size: 3.5em; 
+  font-weight: bold; 
+  color: rgb(77, 77, 77); /* Define a cor da parte "Gest" como laranja */
+}
+  
+  header h1 .lg2 { /* Estilos para a parte "Servi" do nome */
+    font-size: 3em; 
+    font-weight: normal;
+    color: #ff6600; /* Define a cor da parte "Servi" como cinza */
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff8d4b;
+}
+
+.container-quem {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.container-missao {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #b9b9b9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.container-visao {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #ffb488;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.container-valores {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #b9b9b9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Header */
+header {
+    background-image: url("design.png");
+    background-size: cover; /* Redimensiona a imagem para cobrir o header */
+    background-position: center; /* Centraliza a imagem no header */
+    position: relative;
+    padding: 20px 0;
+    height: 300px; /* Ajuste a altura do header para ver mais ou menos da imagem */
+}
+
+.logo {
+    text-align: center;
+
+    max-width: 100%;
+}
+
+.container-logo{
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(63, 63, 63); /* Cor do menu alterada */
+    display: flex; /* Define o menu como um flexbox */
+    justify-content: center; /* Centraliza o conteúdo do menu */
+    align-items: center; /* Centraliza verticalmente o conteúdo do menu */
+    position: fixed; /* Define o elemento como fixo */
+    top: 0; /* Posiciona o topo do elemento na parte superior da tela */
+    width: 100%; /* Define a largura do elemento para ocupar toda a tela */
+    z-index: 10; /* Define o nível de empilhamento para que o menu fique acima do conteúdo */
+    height: 7%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Define a lista como um flexbox */
+    gap: 30px; /* Define um espaço entre os itens da lista */
+}
+
+nav li {
+    display: inline-block; /* Mantém os itens da lista na mesma linha */
+    margin-left: 0; /* Remove a margem esquerda dos itens da lista */
+}
+
+nav a {
+    font-weight: 600;
+    color: #fffefe; /* Cor do texto do menu */
+}
+
+/* Conteúdo */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.feed{
+    text-align: center;
+    color: white;
+}
+
+.feedback-item {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1919;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 25%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.social-media a:hover {
+    color: #ff7a00;
+}
+
+@media (max-width: 800px) {
+    /* Define a largura das colunas */
+    .footer-col{
+        width: 50%;
+        /* Define a margem inferior */
+        margin-bottom: 30px;
+    }
+}
+
+/* Estilos responsivos para telas menores que 600px */
+@media (max-width:600px) {
+    /* Define a largura das colunas */
+    .footer-col{
+        width: 100%;
+    }
+}
+
+.insta{
+    height: 87px;
+    width: 87px;
+}
+
+ /* Define a largura das colunas */
+ .maps{
+    width: 140%;
+    /* Define a margem inferior */
+    margin-bottom: 30px;
+   
+ }
+
+/* Define um estilo para a classe 'whats' */
+.whats {
+    /* Define a posição como fixa */
+    position: fixed;
+    /* Define a posição inferior como 20 pixels */
+    bottom: 20px;
+    /* Define a posição direita como 10 pixels */
+    right: 10px;
+    /* Define a altura como 70 pixels */
+    height: 70px;
+    /* Define a largura como 70 pixels */
+    width: 70px;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+nav.scrolled {
+    background-color: rgba(63, 63, 63, 0.5); /* Define a cor do menu com transparência */
+  }
