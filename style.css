@@ -26,16 +26,21 @@ header {
     margin-top: 10px; 
   }
   
-header h1 .lg1 { /* Estilos para a parte "Gest" do nome */
+.lg1 { /* Estilos para a parte "Gest" do nome */
   font-size: 3.5em; 
   font-weight: bold; 
-  color: rgb(77, 77, 77); /* Define a cor da parte "Gest" como laranja */
+  color: rgb(39, 39, 39); /* Define a cor da parte "Gest" como laranja */
 }
   
-  header h1 .lg2 { /* Estilos para a parte "Servi" do nome */
+.lg2 { /* Estilos para a parte "Servi" do nome */
     font-size: 3em; 
     font-weight: normal;
-    color: #ff6600; /* Define a cor da parte "Servi" como cinza */
+    color: #ff6701; /* Define a cor da parte "Servi" como cinza */
+  }
+
+  h2 {
+    font-size: 50px;
+    text-align: center;
   }
 
 h1, h2, h3, h4, h5, h6 {
@@ -238,14 +243,6 @@ footer li {
     width: 87px;
 }
 
- /* Define a largura das colunas */
- .maps{
-    width: 140%;
-    /* Define a margem inferior */
-    margin-bottom: 30px;
-   
- }
-
 /* Define um estilo para a classe 'whats' */
 .whats {
     /* Define a posição como fixa */
@@ -261,8 +258,13 @@ footer li {
 }
 
 p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
+}
+
+.anonimo {
+    height: 45px;
+    width: 45px;
 }
 
 nav.scrolled {
